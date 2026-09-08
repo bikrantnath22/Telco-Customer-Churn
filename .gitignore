@@ -1,0 +1,33 @@
+# Data and datasets (Best practice is to NOT push data to GitHub, especially if large or sensitive)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.parquet
+
+#Notebooks
+notebooks
+
+#Models
+Models
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv/
+pip-log.txt
+
+# OS / IDE generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
