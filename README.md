@@ -16,57 +16,12 @@ This project performs a **full analytical pipeline** from raw data cleaning to v
 - Customer segmentation using K-Means clustering
 - Financial impact and revenue exposure analysis
 - Retention curve analysis
-- SQL database creation and BI-ready queries
+- SQL database creation 
 - Predictive churn model with best-fit model selection (Random Forest, AUC = 0.846)
 
 ---
 
-## 📂 Project Structure
 
-```
-Churn/
-│
-├── data/
-│   ├── raw/
-│   │   └── Dataset.csv                  # Original IBM Telco dataset (~7,043 rows)
-│   └── processed/
-│       └── cleaned_dataset.csv          # Cleaned & standardized dataset
-│
-├── src/                                 # Python analysis scripts
-│   ├── data_preprocessing.py            # Data cleaning pipeline
-│   ├── eda_analysis.py                  # Exploratory Data Analysis
-│   ├── core_churn_analysis.py           # Overall churn rate & pie chart
-│   ├── demographics_churn_analysis.py   # Churn by gender, age, partner, dependents
-│   ├── services_churn_analysis.py       # Churn by internet & phone services
-│   ├── contract_churn_analysis.py       # Churn by contract type
-│   ├── billing_churn_analysis.py        # Churn by billing method & monthly charges
-│   ├── tenure_churn_analysis.py         # Churn by customer tenure
-│   ├── numerical_analysis.py            # Numerical distribution analysis
-│   ├── customer_segmentation.py         # K-Means segmentation (4 clusters)
-│   ├── optimal_segmentation.py          # Elbow + Silhouette for optimal K
-│   ├── financial_impact_analysis.py     # Revenue exposure & financial analysis
-│   └── retention_analysis.py           # Retention curve by tenure & contract
-│
-├── sql/
-│   ├── create_database.sql              # MySQL schema, LOAD DATA, validation queries
-│   └── retention_analysis.sql           # SQL-based retention rate queries
-│
-├── notebooks/
-│   └── telco_churn_analysis.ipynb       # Full narrative analysis notebook
-│
-├── models/
-│   └── best_model.pkl                   # Saved best predictive model (Random Forest)
-│
-├── reports/
-│   └── figures/                         # 45 auto-generated charts & visualizations
-│
-├── docs/                                # (Planned) Documentation
-│
-├── config.py                            # Central path configuration (no hardcoded paths)
-├── requirements.txt                     # Python dependencies
-├── .gitignore
-└── README.md
-```
 
 ---
 
@@ -303,8 +258,8 @@ All charts saved to `reports/figures/`:
 - [x] SQL database schema + BI queries
 - [x] Jupyter notebook with full narrative (11 sections)
 - [x] Predictive churn model — Random Forest (AUC = 0.846, Recall = 77.5%)
-- [ ] Power BI dashboard
-- [ ] Retention strategy recommendations report
+
+
 
 ---
 
